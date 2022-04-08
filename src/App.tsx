@@ -1,13 +1,14 @@
 import { useState } from "react";
+import { Button } from 'antd';
+import './styles/App.css';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <button type="button" onClick={() => setCount((count) => count + 1)}>
+    <Button className="ant-button" onClick={() => setCount((count) => count + 1)} type="primary" >
       count is: {count}
-    </button>
-
+    </Button>
   );
 }
 
