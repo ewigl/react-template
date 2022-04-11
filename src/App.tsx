@@ -1,10 +1,7 @@
-import { useState } from "react";
-import { Button, Card, Carousel } from 'antd';
-import './styles/App.css';
+import { Carousel } from 'antd';
+import './styles/App.less';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <Carousel >
@@ -21,11 +18,6 @@ function App() {
           <h3 className="carousel-content">4</h3>
         </div>
       </Carousel>
-      {/* <Card title="Antd Card" style={{ width: 300 }}>
-        <Button onClick={() => setCount((count) => count + 1)} type="primary" >
-          count is: {count}
-        </Button>
-      </Card> */}
     </div>
   );
 }
