@@ -23,13 +23,13 @@ function App() {
           <h3 className="carousel-content">4</h3>
         </div>
       </Carousel>
-      <Link to="/about">About</Link>
+      <Link to="about">About</Link>
       <p></p>
-      <Link to="/Index">Index</Link>
+      <Link to="index">Index</Link>
       <p></p>
       <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/index" element={<Index name='Index' />} />
+        <Route path="about" element={<About />} />
+        <Route path="index" element={<Index name='Index' />} />
       </Routes>
     </div>
   );
