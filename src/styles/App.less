@@ -1,13 +1,38 @@
-// @import "antd/dist/antd.less";
+// .carousel-content {
+//   height: 320px;
+//   color: #fff;
+//   line-height: 320px;
+//   text-align: center;
+//   background: #364d79;
+// }
 
-.ant-button {
-  margin: 1rem;
+#app {
+  pointer-events: none;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 56.25vw;
+  transform: translateX(-50%);
+  background-image: url(//s1.hdslb.com/bfs/static/stone-free/dyn-home/assets/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
 
-.carousel-content {
-  height: 320px;
-  color: #fff;
-  line-height: 320px;
-  text-align: center;
-  background: #364d79;
+.top-container {
+  min-height: 64px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 2560px;
+  width: 100%;
+  background-color: white;
+
+  .mini-header__logo {
+    color: #fff;
+    margin-right: 25px;
+    width: 60px;
+    cursor: pointer;
+  }
 }
