@@ -1,11 +1,6 @@
-import Index from "@/container/Index";
 import About from "@/container/About";
 
 const routes = [
-  {
-    path: "/index",
-    component: Index,
-  },
   {
     path: "/about",
     component: About,
