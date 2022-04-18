@@ -1,6 +1,6 @@
 import React from "react";
 
-import Refs from './refs';
+// import Refs from './refs';
 import FormComponent from "./form";
 
 class Demo extends React.Component {
@@ -9,7 +9,7 @@ class Demo extends React.Component {
         return (
             <div>
                 {/* <Refs /> */}
-                <FormComponent />
+                <FormComponent/>
             </div>
         );
     }

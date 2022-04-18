@@ -1,12 +1,12 @@
 import './styles/App.less';
-import Demo from '@/container/Demo';
+import Home from "@/container/Home";
 
 function App() {
-  return (
-    <div id="app">
-      <Demo></Demo>
-    </div>
-  );
+    return (
+        <div id="app">
+            <Home/>
+        </div>
+    );
 }
 
 export default App;

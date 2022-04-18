@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button, Input, message } from 'antd'
+import {Form, Button, Input, message} from 'antd'
 
 class FormComponent extends React.Component {
 
@@ -7,32 +7,32 @@ class FormComponent extends React.Component {
         message.success('values: ' + JSON.stringify(values))
     }
 
-    onFinishFailed = (errorInfo: any) => {
+    onFinishFailed = (errorInfo: unknown) => {
         console.log('Failed:', errorInfo);
     }
 
     render() {
         return (
-            <div style={{ width: '50%', margin: '0 auto' }}>
+            <div style={{width: '50%', margin: '0 auto'}}>
                 <Form
                     labelAlign="left"
-                    labelCol={{ span: 4 }}
+                    labelCol={{span: 4}}
                     onFinish={this.onFinish}
                     onFinishFailed={this.onFinishFailed}
                 >
                     <Form.Item
                         label="Username"
                         name="username"
-                        rules={[{ required: true, message: 'Please input your username!' }]}
+                        rules={[{required: true, message: 'Please input your username!'}]}
                     >
-                        <Input />
+                        <Input/>
                     </Form.Item>
                     <Form.Item
                         label="Password"
                         name="password"
-                        rules={[{ required: true, message: 'Please input your password!' }]}
+                        rules={[{required: true, message: 'Please input your password!'}]}
                     >
-                        <Input type="password" />
+                        <Input type="password"/>
                     </Form.Item>
                     <Form.Item>
                         <Button type="primary" htmlType="submit">Login</Button>
