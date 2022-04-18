@@ -1,6 +1,12 @@
+@import "variables.less";
+
+#landed-app {
+
+}
+
 #head-bar {
-  height: 4rem;
-  background-color: rgba(39, 40, 51, 0.965);
+  height: @headHeight;
+  background-color: rgba(23, 24, 32, 0.95);
 
   #logo {
     display: inline-block;
@@ -8,9 +14,16 @@
 
     a {
       color: white;
+      font-size: 1.2rem;
       text-decoration: none;
+      transition: color 0.3s ease-in-out;
       vertical-align: middle;
       line-height: 4rem;
+
+      &:hover {
+        transition: color 0.3s ease-in-out;
+        color: #e44c65;
+      }
     }
   }
 
@@ -22,23 +35,83 @@
     margin-right: 1rem;
 
     li {
+      //font-size: 1.2rem;
+      transition: color 0.3s ease-in-out;
       color: white;
       display: inline-block;
       margin-left: 20px;
+      cursor: pointer;
+
+      &:hover {
+        transition: color 0.3s ease-in-out;
+        color: #e44c65;
+      }
 
       button {
         background-color: #e44c65;
         border: 0;
+        border-radius: 3px;
         box-shadow: none;
         color: white;
-        height: 2rem;
-        line-height: 2rem;
-        padding: 0 1rem;
+        cursor: pointer;
+        height: 2.4rem;
+        padding: 0 1.32rem;
         outline: 0;
       }
     }
   }
-
 }
 
+#banner {
+  background-attachment: fixed;
+  background-color: rgba(23, 24, 32, 0.95);
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  min-height: 100vh - @headHeight;
+  position: relative;
+  text-align: center;
+  z-index: 21;
 
+  .content {
+    color: white;
+    display: inline-block;
+    margin-right: 1%;
+    max-width: 95%;
+    padding: 6em;
+    position: relative;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 1;
+
+    header {
+      display: inline-block;
+      vertical-align: middle;
+
+      h2 {
+        font-size: 2.5em;
+        margin: 0;
+      }
+
+      p {
+        font-size: 1.32rem;
+        margin: 0.5em 0 0 0;
+        top: 0;
+      }
+    }
+
+    .image {
+      border-radius: 50%;
+      display: inline-block;
+      height: 24rem;
+      margin-left: 3em;
+      vertical-align: middle;
+      width: 24rem;
+
+      border: 0;
+      position: relative;
+      overflow: hidden;
+
+    }
+  }
+}
