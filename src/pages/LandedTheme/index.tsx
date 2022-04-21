@@ -1,8 +1,8 @@
 import React from "react";
 import './styles/index.less';
-import Header from "@/pages/LandedTheme/Header";
-import Banner from "@/pages/LandedTheme/Banner";
-import Page from "@/pages/LandedTheme/Page";
+import Header from "./Header";
+import Banner from "./Banner";
+import Page from "./Page";
 
 class Home extends React.Component {
     render() {

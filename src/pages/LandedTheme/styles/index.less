@@ -1,15 +1,16 @@
-@import "src/container/LandedTheme/styles/variables.less";
+@import "./variables.less";
 
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-#theme {
+#landed-theme {
   animation: fadeInAnimation ease 2.4s;
 
   #head-bar {
@@ -114,7 +115,7 @@
         width: 19.6rem;
         margin-left: 3em;
         vertical-align: middle;
-        background-image: url(~"@/static/pictures/logo.jpg");
+        background-image: url(~"@/public/pictures/logo.jpg");
         background-size: contain;
 
         border: 0;
@@ -127,7 +128,7 @@
 
   #page-one {
     height: 100vh;
-    background-image: url(~"@/static/pictures/mountain.jpg");
+    background-image: url(~"@/public/pictures/mountain.jpg");
     background-size: cover;
   }
 }

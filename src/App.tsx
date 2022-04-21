@@ -1,4 +1,3 @@
-import './App.less';
 import Home from "@/pages/LandedTheme";
 
 function App() {
