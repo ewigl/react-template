@@ -1,13 +1,13 @@
 import React from "react";
-import '@/styles/Home.less';
-import Header from "@/container/Home/Header";
-import Banner from "@/container/Home/Banner";
-import Page from "@/container/Home/Page";
+import './styles/index.less';
+import Header from "@/pages/LandedTheme/Header";
+import Banner from "@/pages/LandedTheme/Banner";
+import Page from "@/pages/LandedTheme/Page";
 
 class Home extends React.Component {
     render() {
         return (
-            <div id="landed-app">
+            <div id="landed-theme">
                 <Header></Header>
                 <Banner></Banner>
                 <Page></Page>

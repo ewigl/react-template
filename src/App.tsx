@@ -1,10 +1,10 @@
-import './styles/App.less';
-import Home from "@/container/Home";
+import './App.less';
+import Home from "@/pages/LandedTheme";
 
 function App() {
     return (
         <div id="app">
-            <Home/>
+            <Home />
         </div>
     );
 }

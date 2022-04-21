@@ -6,7 +6,7 @@ export default function Banner() {
                     <h2>Lorem Ipsum</h2>
                     <p>
                         Lorem ipsum dolor sit amet, adipiscing elit.
-                        <br/>
+                        <br />
                         Etiam mattis pharetra rhoncus.
                     </p>
                 </header>
