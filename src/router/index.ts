@@ -1,10 +1,10 @@
-import About from "@/container/About";
+import HelloReact from "@/components/HelloReact";
 
 const routes = [
-  {
-    path: "/about",
-    component: About,
-  },
+    {
+        path: "/about",
+        component: HelloReact,
+    },
 ];
 
 export default routes;
